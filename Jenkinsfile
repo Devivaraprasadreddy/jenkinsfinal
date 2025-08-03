@@ -24,7 +24,7 @@ pipeline {
                 script {
                     // Checkout the specified branch using Git credentials
                     checkout([$class: 'GitSCM', branches: [[name: "${params.BRANCH_NAME}"]],
-                              userRemoteConfigs: [[url: 'https://github.com/Devivaraprasadreddy/portfolioreactwithjenkins.git', credentialsId: "${env.GIT_CREDENTIALS_ID}"]]])
+                              userRemoteConfigs: [[url: 'https://github.com/Devivaraprasadreddy/jenkinsfinal.git/', credentialsId: "${env.GIT_CREDENTIALS_ID}"]]])
                 }
             }
         }
